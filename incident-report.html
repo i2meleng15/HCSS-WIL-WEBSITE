@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Report</title>
+    <style>
+        /* Reset body margin and padding */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed; /* Ensure the navbar stays at the top */
+            top: 0;
+            z-index: 1000; /* Make sure it appears above other content */
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Style for the form container */
+        .content {
+            margin-top: 80px; /* Ensure form is below navbar */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 600px; 
+            background-color: white; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="datetime-local"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="incident-report.html">Incident Report Form</a>
+        <a href="documentation.html">Documentation</a>
+    </div>
+
+    <!-- Content (Form) -->
+    <div class="content">
+        <h1>Incident Report</h1>
+        <form>
+            <label for="dateTime">Date and Time:</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+            <label for="callerName">Caller's Full Name:</label>
+            <input type="text" id="callerName" name="callerName" required>
+
+            <label for="callerDept">Caller's Department:</label>
+            <input type="text" id="callerDept" name="callerDept" required>
+
+            <label for="incidentTitle">Incident Title/Category:</label>
+            <input type="text" id="incidentTitle" name="incidentTitle" required>
+
+            <label for="incidentDesc">Incident Description:</label>
+            <input type="text" id="incidentDesc" name="incidentDesc" required>
+
+            <label>Urgency:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="urgency" value="Very Urgent" required> Very Urgent</label>
+                <label><input type="radio" name="urgency" value="Average"> Average</label>
+                <label><input type="radio" name="urgency" value="Not Urgent"> Not Urgent</label>
+            </div>
+
+            <label>Priority:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="priority" value="High" required> High</label>
+                <label><input type="radio" name="priority" value="Average"> Average</label>
+                <label><input type="radio" name="priority" value="Low"> Low</label>
+            </div>
+
+            <div class="section">
+                <h2>POST RESOLUTION DETAILS</h2>
+                <label>Status of Request:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="status" value="Resolved" required> Resolved</label>
+                    <label><input type="radio" name="status" value="Cancelled"> Cancelled</label>
+                    <label><input type="radio" name="status" value="Escalated"> Escalated</label>
+                </div>
+
+                <label for="escalatedTo">Escalated to:</label>
+                <input type="text" id="escalatedTo" name="escalatedTo">
+
+                <label for="causeOfIncident">Cause of Incident:</label>
+                <input type="text" id="causeOfIncident" name="causeOfIncident">
+
+                <label for="incidentSolution">Incident Solution:</label>
+                <input type="text" id="incidentSolution" name="incidentSolution">
+
+                <label for="cancellationReason">Cancellation Reason:</label>
+                <input type="text" id="cancellationReason" name="cancellationReason">
+            </div>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tech Support</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for navbar links */
+        .navbar a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+
+        /* Active link styling */
+        .navbar a.active {
+            background-color: #04AA6D; 
+            color: white;
+        }
+
+        .content {
+            margin-top: 80px; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px; 
+        }
+
+        .logo {
+            margin: 30px 0;
+            width: 250px; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="incident-report.html">Incident Report</a>
+        <a href="documentation.html">Documentation</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <img src="logo.png" alt="Team Logo" class="logo"> <!-- Update logo path -->
+        <h1>Welcome to Tech Support!</h1>
+        <p>
+            This website serves as a central location for all the information and resources that Tech Support agents use on a daily basis.
+            Here, you can find documentation, incident reporting forms, and other essential tools to assist you in resolving technical issues efficiently.
+        </p>
+        <p>
+            Use the navigation bar above to access various sections of the website, including procedural documentation and incident reports.
+            For any help or inquiries, please contact the support team at <a href="mailto:ithelp@techsupport.com">ithelp@techsupport.com</a>.
+        </p>
+    </div>
+
+</body>
+</html>
+

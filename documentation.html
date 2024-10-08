@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Tech Support</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for navbar links */
+        .navbar a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+
+        /* Active link styling */
+        .navbar a.active {
+            background-color: #04AA6D; /* Green color for active page */
+            color: white;
+        }
+
+        /* Content below navbar */
+        .content {
+            margin-top: 80px; /* Space for the fixed navbar */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        /* Styling for questions */
+        .question {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 600px; /* Limit width */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+		<a href="incident-report.html">Incident Report</a>
+        <a href="documentation.html" class="active">Documentation</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Troubleshooting Questions for Help Desk Agents</h1>
+
+        <!-- Questions Section -->
+        <div class="question">
+            <h2>1. Can you describe the issue you’re experiencing?</h2>
+        </div>
+        
+        <div class="question">
+            <h2>2. When did the problem start?</h2>
+        </div>
+
+        <div class="question">
+            <h2>3. Have there been any recent changes to your system or network?</h2>
+        </div>
+
+        <div class="question">
+            <h2>4. Is this problem affecting other users in your department?</h2>
+        </div>
+
+        <div class="question">
+            <h2>5. Have you tried restarting your computer or the application?</h2>
+        </div>
+
+        <div class="question">
+            <h2>6. Is there any specific error message you are seeing?</h2>
+        </div>
+
+        <div class="question">
+            <h2>7. Have you experienced this issue before?</h2>
+        </div>
+
+        <div class="question">
+            <h2>8. What is the urgency of resolving this issue?</h2>
+        </div>
+
+        <div class="question">
+            <h2>9. Is there anything else that you think might be relevant?</h2>
+        </div>
+    </div>
+
+</body>
+</html>
